@@ -1,0 +1,11 @@
+prixProduitHT = int(input("Veuillez entrer le prix HT d'un produit:"))
+quantite = int(input("Veuillez entrer la quantité commandée:"))
+a = prixProduitHT * quantite
+print(a)
+remise = a * 15 / 100
+prixHTtotal = a - remise
+print(prixHTtotal)
+TVA = int(input("Veuillez entrer le taux de TVA:"))
+TVA = prixHTtotal * TVA / 100
+PrixTTC = prixHTtotal + TVA
+print(PrixTTC)
